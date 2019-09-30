@@ -1,0 +1,40 @@
+<section id='about'>
+  <div class='row'>
+    <div class='two columns'>
+      <img class='profile-pic' src="assets/images/profile.jpg" alt={{name}}/>
+    </div>
+    <div class='ten columns main-col'>
+      <h2>About Me</h2>
+      <p *ngFor="let summ of summary">{{summ}}</p>
+      <div class='row'>
+        <div class='columns contact-details'>
+          <h2>Contact Details</h2>
+          <p class='address'>
+            <span>{{location.city}}</span>
+            <br/>
+            <span>{{location.region + ', ' + location.postalCode}}</span>
+            <br/>
+            <span>{{location.countryCode}}</span>
+            <br/>
+            <a href='skype:{{basics.phone}}'>
+              <span>{{basics.phone}}</span>
+            </a>
+            <br/>
+            <a href='mailto:{{basics.email}}'>
+              <span>{{basics.email}}</span>
+            </a>
+          </p>
+        </div>
+        <div class='columns download'>
+          <p>
+            <a href="assets/ArunManoharResume.pdf" download='Arun-Manohar-Resume.pdf'
+               class='button'>
+              <i class='fa fa-download'></i>
+              Download Resume
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

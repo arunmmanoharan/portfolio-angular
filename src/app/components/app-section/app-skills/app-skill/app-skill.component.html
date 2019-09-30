@@ -1,0 +1,9 @@
+<div class='row inside'>
+  <h3>{{title}}</h3>
+  <p *ngFor="let point of summary" class='skill-summary'>{{point}}</p>
+  <div class='bars'>
+    <ul class='skills'>
+      <app-entry-skill *ngFor="let entry of content" [entry]="entry"></app-entry-skill>
+    </ul>
+  </div>
+</div>

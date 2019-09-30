@@ -1,0 +1,14 @@
+<section id='projects'>
+  <div class='row work'>
+    <div class='header-col'>
+      <div>
+        <h1>
+          <span>Projects</span>
+        </h1>
+      </div>
+      <div id='portfolio-wrapper' class='ten columns main-col'>
+        <app-entry-portfolio *ngFor="let entry of portfolioData" [entry]="entry"></app-entry-portfolio>
+      </div>
+    </div>
+  </div>
+</section>

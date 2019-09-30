@@ -1,0 +1,18 @@
+<div class='row item'>
+  <div class='twelve columns'>
+    <h3>
+      <a href="entry.website">{{entry.company}}</a>
+    </h3>
+    <p class='info'>
+      {{entry.position}}
+      <span> &bull; </span>
+      <span class='info-summary'>{{entry.summary}}</span>
+      <span> &bull; </span>
+      <em class='date'>{{startDate}} - {{endDate}}</em>
+    </p>
+    <p class="info ">{{entry.description}}</p>
+    <app-bulletpoints [points]="entry.highlights"></app-bulletpoints>
+  </div>
+  <br *ngIf="index === total"/>
+  <hr *ngIf="index !== total"/>
+</div>

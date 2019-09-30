@@ -1,0 +1,12 @@
+<section id='work'>
+  <div class='row work'>
+    <div class='two columns header-col'>
+      <h1>
+        <span>Work</span>
+      </h1>
+    </div>
+    <div class='ten columns main-col'>
+      <app-entry-work *ngFor="let work of workData; let i = index" [index]="i" [entry]="work" [total]="workData.length"></app-entry-work>
+    </div>
+  </div>
+</section>

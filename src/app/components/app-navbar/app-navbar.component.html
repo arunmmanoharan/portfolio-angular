@@ -1,0 +1,9 @@
+<nav id='nav-wrap' class='opaque' [ngStyle]="{background:'#313131'}">
+  <a class='mobile-btn' href='#nav-wrap' title='Show navigation'>Show navigation</a>
+  <a class='mobile-btn' href='#' title='Hide navigation'>Hide navigation</a>
+  <ul id='nav' class='nav'>
+    <li *ngFor="let navigationItem of navigation">
+      <app-navlink [link]="navigationItem.link" [name]="navigationItem.name"></app-navlink>
+    </li>
+  </ul>
+</nav>

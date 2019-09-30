@@ -1,0 +1,9 @@
+<ul class="social">
+  <li *ngFor="let profile of profiles">
+    <a href="{{profile.url}}" [ngSwitch]="profile.network.toLowerCase()">
+      <i *ngSwitchCase="'email'" class="fa fa-envelope"></i>
+      <i *ngSwitchCase="'quora'" class="fa fa-fw"><strong class='fa-quora'>Q</strong></i>
+      <i *ngSwitchDefault class="{{'fa fa-' + profile.network.toLowerCase()}}"></i>
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,12 @@
+<section id='education'>
+  <div class='row education'>
+    <div class='two columns header-col'>
+      <h1>
+        <span>Education</span>
+      </h1>
+    </div>
+    <div class='ten columns main-col'>
+      <app-entry-education *ngFor="let entry of educationData" [entry]="entry"></app-entry-education>
+    </div>
+  </div>
+</section>
