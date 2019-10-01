@@ -1,7 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import {AppRoutingModule} from './app-routing.module';
 
@@ -29,6 +28,7 @@ import {AppPortfolioComponent} from './components/app-section/app-portfolio/app-
 import {AppEntryPortfolioComponent} from './components/app-section/app-portfolio/app-entry-portfolio/app-entry-portfolio.component';
 import {AppReferencesComponent} from './components/app-section/app-references/app-references.component';
 import {AppEntryReferencesComponent} from './components/app-section/app-references/app-entry-references/app-entry-references.component';
+import {AppFooterComponent} from './components/app-footer/app-footer.component';
 
 @NgModule({
   declarations: [
@@ -53,13 +53,13 @@ import {AppEntryReferencesComponent} from './components/app-section/app-referenc
     AppPortfolioComponent,
     AppEntryPortfolioComponent,
     AppReferencesComponent,
-    AppEntryReferencesComponent
+    AppEntryReferencesComponent,
+    AppFooterComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    NgbModule
   ],
   providers: [ApiService, DataService],
   bootstrap: [AppComponent]

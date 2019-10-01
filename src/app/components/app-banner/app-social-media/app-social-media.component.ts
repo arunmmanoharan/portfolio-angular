@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {DataService} from '../../../services/data.service';
 
 @Component({
@@ -9,6 +9,7 @@ import {DataService} from '../../../services/data.service';
 
 export class AppSocialMediaComponent implements OnInit {
 
+  @Input() ulClass;
   profiles = {};
 
   constructor(private dataService: DataService) {

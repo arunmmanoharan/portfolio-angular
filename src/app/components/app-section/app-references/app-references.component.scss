@@ -1,0 +1,10 @@
+.flexslider{
+  margin: 20px auto;
+  width:40vw;
+  height:400px;
+  background-color:#fff;
+  display:grid;
+  grid-template-columns: 20vw 20vw;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
