@@ -1,7 +1,7 @@
 <li>
 			<span
         class="bar-expand percentage{{entry.level}}"
-        (mouseenter)="handleMouseEnter()"
+        (mouseenter)="handleMouseEnter($event)"
         (mouseleave)="handleMouseLeave()"
         [ngStyle]="style"></span>
   <em>{{entry.name}}</em>

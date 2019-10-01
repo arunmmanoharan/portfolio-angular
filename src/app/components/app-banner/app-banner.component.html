@@ -1,7 +1,7 @@
 <div class='row banner'>
   <div class='banner-text'>
     <h1 class='responsive-headline'
-        (mouseenter)="handleMouseEnter()"
+        (mouseenter)="handleMouseEnter($event)"
         (mouseleave)="handleMouseLeave()"
         [ngStyle]="style">
       {{name}}
