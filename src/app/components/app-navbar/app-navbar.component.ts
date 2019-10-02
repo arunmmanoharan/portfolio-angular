@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import navigation from '../../constants/constants';
 import * as _ from 'lodash';
 import {REACT_URL} from '../../constants/URL_Constants';
@@ -6,9 +6,11 @@ import {REACT_URL} from '../../constants/URL_Constants';
 @Component({
   selector: 'app-navbar',
   templateUrl: './app-navbar.component.html',
-  styleUrls: ['./app-navbar.component.scss']
+  styleUrls: ['./app-navbar.component.scss'],
 })
 export class AppNavbarComponent implements OnInit {
+
+  @Input() showReactButton;
 
   navigation: any;
 
