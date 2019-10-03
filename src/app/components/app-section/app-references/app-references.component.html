@@ -1,9 +1,18 @@
+<!--<section id='references'>-->
+<!--  <div class='text-container'>-->
+<!--    <div class='row'>-->
+<!--      <div class='flexslider'>-->
+<!--        <app-entry-references *ngFor="let entry of referencesData" [entry]="entry"></app-entry-references>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 <section id='references'>
   <div class='text-container'>
-    <div class='row'>
       <div class='flexslider'>
-        <app-entry-references *ngFor="let entry of referencesData" [entry]="entry"></app-entry-references>
+        <owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+          <app-entry-references *ngFor="let entry of referencesData" [entry]="entry"></app-entry-references>
+        </owl-carousel>
       </div>
-    </div>
   </div>
 </section>

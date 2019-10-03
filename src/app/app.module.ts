@@ -1,6 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
+import { OwlModule } from 'ngx-owl-carousel';
 
 import {AppRoutingModule} from './app-routing.module';
 
@@ -60,6 +61,7 @@ import {AppFooterComponent} from './components/app-footer/app-footer.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    OwlModule
   ],
   providers: [ApiService, DataService],
   bootstrap: [AppComponent]
