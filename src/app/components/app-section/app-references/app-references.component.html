@@ -1,7 +1,7 @@
 <section id='references'>
   <div class='text-container'>
       <div class='flexslider'>
-        <owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+        <owl-carousel [options]="carouselOptions" [items]="referencesData" [carouselClasses]="['owl-theme', 'row', 'sliding']">
           <app-entry-references *ngFor="let entry of referencesData" [entry]="entry"></app-entry-references>
         </owl-carousel>
       </div>
