@@ -19,13 +19,13 @@ export class AppNavbarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.navigation = _.map(_.keys(navigation), (link) => {
-        const name = navigation[link];
-        return {
-          link,
-          name
-        };
-      }
-    );
+      this.navigation = _.map(_.keys(navigation), (link) => {
+          const name = navigation[link];
+          return {
+            link,
+            name
+          };
+        }
+      );
   }
 }
