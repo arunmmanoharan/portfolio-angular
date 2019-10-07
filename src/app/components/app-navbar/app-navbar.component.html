@@ -6,5 +6,6 @@
       <app-navlink [link]="navigationItem.link" [name]="navigationItem.name"></app-navlink>
     </li>
   </ul>
-  <button id="goToReact" [ngClass]="(showReactButton === true) ? 'scale-in' : 'scale-out'" (click)="goToReact()"> Switch to React Version</button>
+  <button id="goToReact" [ngClass]="(showReactButton === true) ? 'scale-in' : 'scale-out'" (click)="goToReact()" [style.marginRight]="'20px'"> Switch to React Version</button>
+  <button id="goToVue" [ngClass]="(showReactButton === true) ? 'scale-in' : 'scale-out'" (click)="goToVue()"> Switch to Vue Version</button>
 </nav>

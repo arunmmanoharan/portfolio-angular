@@ -1,7 +1,7 @@
 import {Component, OnInit, Input} from '@angular/core';
 import navigation from '../../constants/constants';
 import * as _ from 'lodash';
-import {REACT_URL} from '../../constants/URL_Constants';
+import {REACT_URL, VUE_URL} from '../../constants/URL_Constants';
 
 @Component({
   selector: 'app-navbar',
@@ -16,6 +16,10 @@ export class AppNavbarComponent implements OnInit {
 
   goToReact() {
     window.open(REACT_URL, '_self');
+  }
+
+  goToVue() {
+    window.open(VUE_URL, '_self');
   }
 
   ngOnInit() {
