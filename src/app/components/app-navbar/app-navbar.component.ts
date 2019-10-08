@@ -14,14 +14,6 @@ export class AppNavbarComponent implements OnInit {
 
   navigation: any;
 
-  goToReact() {
-    window.open(REACT_URL, '_self');
-  }
-
-  goToVue() {
-    window.open(VUE_URL, '_self');
-  }
-
   ngOnInit() {
       this.navigation = _.map(_.keys(navigation), (link) => {
           const name = navigation[link];
