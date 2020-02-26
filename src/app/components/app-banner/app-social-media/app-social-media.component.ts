@@ -10,7 +10,7 @@ import {DataService} from '../../../services/data.service';
 export class AppSocialMediaComponent implements OnInit {
 
   @Input() ulClass;
-  profiles = {};
+  profiles:any = [];
 
   constructor(private dataService: DataService) {
   }

@@ -10,7 +10,7 @@ export class AppHeaderComponent implements OnInit, AfterViewInit {
   @Input() showReactButton;
 
   window: any;
-  style: any;
+  height: any;
 
   constructor() {
     this.window = {
@@ -24,9 +24,7 @@ export class AppHeaderComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.style = {
-      height: this.window.height
-    };
+      this.height = this.window.height
   }
 
 }

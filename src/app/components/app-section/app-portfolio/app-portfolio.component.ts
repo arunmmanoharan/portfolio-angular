@@ -9,7 +9,7 @@ import {DataService} from '../../../services/data.service';
 
 export class AppPortfolioComponent implements OnInit {
 
-  portfolioData = {};
+  portfolioData:any = [];
 
   constructor(private dataService: DataService) {
   }

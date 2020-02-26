@@ -9,7 +9,7 @@ import {DataService} from '../../../services/data.service';
 
 export class AppEducationComponent implements OnInit {
 
-  educationData = {};
+  educationData:any = [];
 
   constructor(private dataService: DataService) {
   }

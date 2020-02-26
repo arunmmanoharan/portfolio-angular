@@ -9,7 +9,7 @@ import {DataService} from '../../../services/data.service';
 
 export class AppWorkComponent implements OnInit {
 
-  workData = {};
+  workData:any = [];
 
   constructor(private dataService: DataService) {
   }

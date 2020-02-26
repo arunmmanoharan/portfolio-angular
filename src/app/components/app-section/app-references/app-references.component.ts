@@ -9,7 +9,7 @@ import {DataService} from '../../../services/data.service';
 
 export class AppReferencesComponent implements OnInit {
 
-  referencesData = {};
+  referencesData:any = [];
 
   carouselOptions = {
     margin: 25,
