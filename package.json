@@ -33,7 +33,7 @@
     "express": "^4.17.1",
     "jquery": "^3.5.0",
     "lodash": "^4.17.15",
-    "moment": "^2.25.1",
+    "moment": "^2.25.3",
     "ngx-owl-carousel": "^2.0.7",
     "path": "^0.12.7",
     "rxjs": "~6.5.5",
@@ -58,7 +58,7 @@
     "karma-jasmine": "~3.1.1",
     "karma-jasmine-html-reporter": "^1.5.3",
     "protractor": "~5.4.4",
-    "ts-node": "~8.9.1",
+    "ts-node": "~8.10.1",
     "tslint": "~6.1.2"
   },
   "greenkeeper": {
